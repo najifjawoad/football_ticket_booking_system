@@ -53,3 +53,11 @@ values
 (103, 'Bayern Munich vs PSG', 'Champions League', 130.00, 'Available'),
 (104, 'AC Milan vs Inter Milan', 'Serie A', 90.00, 'Sold Out'),
 (105, 'Juventus vs Roma', 'Serie A', 80.00, 'Available');
+
+insert into bookings(booking_id , user_id , match_id , seat_number , payment_status , total_cost)
+values
+(501, 1, 101, 'A-12', 'Confirmed', 150.00),
+(502, 1, 102, 'B-04', 'Confirmed', 120.00),
+(503, 2, 101, 'A-13', 'Confirmed', 150.00),
+(504, 2, 101, NULL, NULL, 150.00),
+(505, 3, 102, 'C-20', 'Pending', 120.00);
